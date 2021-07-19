@@ -981,25 +981,25 @@ textarea {
 
 /* layout */
 
-.home .site {
+.site {
   column-gap: 3em;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
 
-.home .site-header {
+.site-header {
   grid-column: 1 / span 12;
 }
 
-.home .site-main {
+.site-main {
   grid-column: 2 / span 6;
 }
 
-.home .widget-area {
+.widget-area {
   grid-column: 8 / span 4;
 }
 
-.home .site-footer {
+.site-footer {
   grid-column: 1 / span 12;
 }
 
@@ -1009,29 +1009,29 @@ textarea {
 
 /* hide elements */
 
-.home .site-title,
+.site-title,
 .main-navigation {
   display: none;
 }
 
 /* logo and description */
 
-.home .site-header {
+.site-header {
   border-bottom: 1px solid #ddd;
 }
 
-.home .custom-logo-link {
+.custom-logo-link {
   border-bottom: 1px solid #ddd;
   padding: 50px var(--padding-main) 35px var(--padding-main);
 }
 
-.home .custom-logo-link img {
+.custom-logo-link img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
 }
 
-.home .site-description {
+.site-description {
   font-size: 1.2rem;
   margin: 0;
   padding: 20px var(--padding-main);
@@ -1039,13 +1039,19 @@ textarea {
 
 /* headings */
 
-h1.entry-title,
-h2.widget-title {
-  font-size: 1.2rem;
+h1.entry-title {
+  font-size: 2.7rem;
+  line-height: 1.2;
   margin: 26px 0 0 0;
 }
 
+.home h1.entry-title {
+  font-size: 1.2rem;
+}
+
 h2.widget-title {
+  font-size: 1.2rem;
+  line-height: 1.2;
   margin-top: 13px;
 }
 
@@ -1071,11 +1077,11 @@ h2.widget-title {
 
 /* sidebar menu */
 
-.home .widget-area p {
+.widget-area p {
   margin-top: 7px;
 }
 
-.home .widget-area .widget {
+.widget-area .widget {
   background: #f5f5f5;
   border-radius: 5px;
   margin: 8px 0;
@@ -1084,21 +1090,21 @@ h2.widget-title {
 
 /* footer */
 
-.home .site-footer {
+.site-footer {
   background: var(--color-dark);
   color: #fff;
 }
 
-.home .site-footer a {
+.site-footer a {
   color: #fff;
   text-decoration: underline;
 }
 
-.home .site-footer a:hover {
+.site-footer a:hover {
   color: var(--color-main);
 }
 
-.home .site-info {
+.site-info {
   padding: 10px var(--padding-main) 20px var(--padding-main);
 }
 
@@ -1128,17 +1134,17 @@ a:hover {
     --padding-main: 15px;
   }
 
-  .home .site {
+  .site {
     display: block;
   }
 
-  .home .custom-logo-link,
-  .home .site-main,
-  .home .widget-area {
+  .custom-logo-link,
+  .site-main,
+  .widget-area {
     padding: 20px var(--padding-main);
   }
 
-  .home .site-description {
+  .site-description {
     font-size: 1rem;
   }
 }
